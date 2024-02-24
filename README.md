@@ -1,9 +1,5 @@
 # Laboratorio 5 - MVC
-En el ámbito del desarrollo de software, las pruebas son una fase crítica para garantizar la calidad del producto final. Entre las diversas técnicas y enfoques disponibles, las clases de equivalencia destacan como una metodología fundamental para diseñar casos de prueba efectivos y eficientes. 
-
-Las clases de equivalencia nos permiten agrupar conjuntos de datos de entrada que deberían producir resultados similares en el sistema bajo prueba. Esta técnica se basa en la premisa de que si un caso de prueba funciona para un conjunto de datos representativos dentro de una clase de equivalencia, es probable que funcione para todos los datos en esa clase.
-
-En este laboratorio se evidenciará la importancia de estas clases de equivalencia en el desarrollo de Software, a través de ejercicios prácticos.
+En este laboratorio, se explorará la creación de aplicaciones web utilizando el framework Spring MVC. Las aplicaciones web son sistemas de software diseñados para ser utilizados a través de un navegador web. Estos sistemas son necesarios para una variedad de propósitos, incluyendo la presentación de información, la interacción con bases de datos, y la realización de operaciones comerciales.
 
 ## Primera parte. Jugando a ser un cliente HTTP
 1.	Abra una terminal Linux o consola de comandos Windows.
