@@ -31,7 +31,7 @@ En este laboratorio, se explorará la creación de aplicaciones web utilizando e
     * Puerto: 80
     * Versión HTTP: 1.1
     Ahora, solicite (GET) el recurso /html
-    Se obtiene como resultado la siguiente página wew, la cual contiene un fragmento del texto de Moby Dick
+    Se obtiene como resultado la siguiente página web, la cual contiene un fragmento del texto de Moby Dick
 
     ![image](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/ca46b368-c0c2-47b6-8386-0a1593b171d9)
     ![image](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/aaa6d242-98ac-46c0-835b-6bb50b39f274)
@@ -130,59 +130,55 @@ En este laboratorio, se explorará la creación de aplicaciones web utilizando e
   * __@ResponseBody:__ Anota un método para devolver el resultado directamente al cuerpo de la respuesta HTTP.
 
 ## Tercera Parte. Aplicación MVC para consumo de servicio restful
-1. Paso uno
+1. Se genera el paquete con ayuda de **Spring Initializr** añadiendo las dependencias Spring Web y Spring Boot Dev Tools, además de la configuración de la forma en que se manejará el proyecto.
 
   ![Imagen de WhatsApp 2024-02-23 a las 19 30 37_8cf801b3](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/bda7b40b-9a88-426b-8825-c50dd7663e7f)
 
-2. Paso 2
+2. Se identifica la API que se va a implementar.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 31 19_d64bcc0d](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/62e77934-6fef-484a-89af-b9aa3cb6e894)
 
-3. Paso 3
+3. Creación de la clase User de acuerdo con la API.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 31 47_68c2f1e4](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/4916e447-34e8-47a8-9e1e-fa99d146bfe7)
 
-4. Paso 4
+4. Creación del controlador UserController para mostrar los resultados en la página web.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 32 05_bc6c839e](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/4ebd1e6b-4ec2-42f7-87bc-6f2a1c57a136)
 
-5. Paso 5
+5. Se agrega la dependencia de thymeleaf al archivo pom.xml.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 32 33_be767331](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/12c5fa5b-06bc-475d-9d71-6e4ee24da6e9)
 
-6. Paso 6
+6. Se implementa el archivo html para la página hello (Página de ejemplo).
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 32 50_3a558a7b](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/27e9aad2-e925-4d50-97fd-96b793a94b4f)
  
-7. Paso 7
+7. Se implementa el archivo html para la página de user y se obtienen los atributos del objeto User que se esté manejando.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 33 10_28030fe7](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/149fd351-396f-4ae7-9166-bef36ac36ca5)
 
-8. Paso 8
+8. Se agrega el recurso con extensión .css para decorar la página.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 33 20_ab86273c](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/74c9e22f-d497-4b78-9cc0-6c7ec7bf48ad)
 
-9. Ejecutar el comando mvnw spring-boot:run
+9. Ejecutar el comando mvnw spring-boot:run.
 
    ![Imagen de WhatsApp 2024-02-23 a las 19 34 15_4c1b7c47](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/522e9bf8-18fc-4d73-b5ac-1e76affcedce)
 
-10. Paso 10
+10. Al ejecutarlo se accede al link de la página web y cómo se puede ver se muestran los atributos del objeto User que se utilizan en la API.
 
     ![Imagen de WhatsApp 2024-02-23 a las 19 34 27_97e82e9c](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/1c5d8c9c-0508-4373-b0e4-85e5bd61c496)
 
-11. Paso 11
+11. En las siguientes imágenes se puede observar que al cambiar el path de la página cada uno de los atributos de los usuarios también se va actualizando y va tomando diferentes valores.
 
     ![Imagen de WhatsApp 2024-02-23 a las 19 34 37_d31176da](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/3ae6fc60-5105-4aff-8a66-16c939cf8b6d)
 
-12. Paso 12
-
     ![Imagen de WhatsApp 2024-02-23 a las 19 34 47_a735c25b](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/29baadf3-9046-49aa-969a-567ba8ea6026)
-
-13. Paso 13
 
     ![Imagen de WhatsApp 2024-02-23 a las 19 34 57_dd7ecd5d](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/1c91e31d-6970-4af1-b381-8d47d27baf15)
 
-14. Paso 14
+14. Estructura de los archivos implementados.
 
     ![Imagen de WhatsApp 2024-02-23 a las 19 35 09_d7cc4dc0](https://github.com/alexandrac1420/CVDS_Lab-5_Cortes_Rojas_Vasquez/assets/138069735/95db42c7-49c0-49d5-aa3d-56487b685b40)
 
