@@ -197,8 +197,23 @@ En este laboratorio, se explorará la creación de aplicaciones web utilizando e
   Bootstrap CSS es un framework de diseño web que proporciona componentes y estilos predefinidos para crear interfaces de usuario atractivas y responsivas. Su uso sería principalmente en la capa de Vista, ya que se encarga de la presentación y la interfaz de usuario.
 
 ## Cuarta Parte. Aplicación MVC Juego
+### Ejecución 
+#### Inicio 
+![img.png](img.png)
+#### Insersión numero erroneo
+![img_1.png](img_1.png)
+#### Insersión numero correcto
+![img_2.png](img_2.png)
+### Preguntas
+* ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
 
+    Si se abre el sitio de juegos en dos navegadores diferentes, cada navegador tendrá su propia sesión independiente. Esto significa que cada jugador tendrá su propio estado de juego, incluyendo su saldo y cualquier acción que realice en el juego. <br><br>
 
+    Sin embargo, si ambos jugadores están usando la misma sesión (por ejemplo, si abren el juego en dos pestañas del mismo navegador), compartirán el mismo estado de juego, incluyendo el saldo. Esto se debe a que las sesiones en el servidor son compartidas entre todas las peticiones del mismo navegador para un mismo sitio web.
+  <br><br>
+* Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+  
+    Para asegurarse de que cada jugador tenga su propio saldo independiente, seria necesario implementar un mecanismo de autenticación y sesión para identificar a cada jugador de manera única. Esto podría hacerse utilizando la autenticación de usuario y almacenando el saldo en la sesión del usuario, de modo que cada jugador tenga su propia sesión y, por lo tanto, su propio saldo independiente.
 
 
 ## Bibliografia

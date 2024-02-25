@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Guess Game</title>
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+<div class="container">
     <form action="/guess" method="post">
-        <h1>Adivina el número: </h1>
+        <h1>Adivina el número!! </h1>
+        <p>Tu premio actual es de $<span th:text="${prize}"></span></p>
         <label for="number" class="form-label">Ingresa un número (1-10): </label>
-        <input type="number" class="form-control" id="number" name="number" required min="1" max="10">
-        <button type="button"> Adivinar! </button>
+        <input type="number" class="form-control" id="number" name="numero" required min="1" max="10">
+        <button type="submit"> Jugar! </button>
     </form>
-    
-    <p th:text="${score}"></p>
-    
-    <form action="/reset" method="get">
-        <button type="button"> Reiniciar </button>
+    <form action="/guess/reset" method="get">
+        <button type="submit"> Reiniciar </button>
     </form>
+</div>
 </body>
 </html>
